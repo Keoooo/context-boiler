@@ -1,5 +1,6 @@
 import React, { useState, createContext } from "react";
 
+//basic boilerplate for use context set up
 export const nameOfContext = createContext();
 
 export const nameOfProvider = (props) => {
@@ -14,3 +15,7 @@ export const useWallet = () => {
   }
   return context;
 };
+
+//will need to wrap <nameOfProvider><Component {...pageProps} /><nameOfProvider/> in _app
+// in components  import { useWallet } from "..... location "";
+//  const { } = useWallet();  deconstruct values needed
