@@ -5,7 +5,7 @@ export const nameOfContext = createContext();
 
 export const nameOfProvider = (props) => {
   const value = {};
-  return <WalletContextProvider value={value} {...props} />;
+  return <WalletContext.Provider value={value} {...props} />;
 };
 
 export const useWallet = () => {
